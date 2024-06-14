@@ -6,6 +6,8 @@ command-line or GUI-based application using Python, allowing
 users to create, update, and track their to-do lists
 '''
 l1 = []
+
+#Function to create the task
 def create(task):
     global l1
     try:
@@ -17,6 +19,7 @@ def create(task):
     else:
         print("Successfully added the task.")
 
+#Function to update the task
 def update():
     global l1
     if len(l1) == 0:
@@ -61,6 +64,7 @@ Choose the option
         else:
             print("Invalid option. ")
 
+#Function to track the task
 def track():
     global l1
     if len(l1) == 0:
@@ -70,9 +74,6 @@ def track():
         print("Current to do list.")
         for i in range(len(l1)):
             print(f"    {i+1}:",l1[i])
-
-
-        
 
 print("TODO LIST")
 while(True):
@@ -95,6 +96,7 @@ while(True):
         track()
     
     elif choice == 4:
+        print("Program ended.")
         break
 
 

@@ -5,15 +5,19 @@ Prompt the user to input two numbers and an operation choice.
 Perform the calculation and display the result
 '''
 
+#Function to perform addition of the 2 numbers
 def addition(x,y):
     print(f"The value of {x} + {y} is {x+y}")
 
+#Function to perform subtraction of the 2 numbers
 def subtraction(x,y):
     print(f"The value of {x} - {y} is {x-y}")
 
+#Function to perform multiplication of the 2 numbers
 def multiplication(x,y):
     print(f"The value of {x} * {y} is {x*y}")
 
+#Function to perform division of the 2 numbers
 def division(x,y):
     try:
         divide = x/y
@@ -58,6 +62,7 @@ while(True):
         division(x,y)
     
     elif choice == 5:
+        print("Program ended.")
         break
 
     else:

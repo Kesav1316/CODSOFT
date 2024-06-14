@@ -10,6 +10,7 @@ import random
 
 l1 = [chr(i) for i in range(33,127)]
 
+#Function to generate the random password
 def generate(length):
     global l1
     password = ""
@@ -37,6 +38,7 @@ while(True):
             print("Invalid. ")
     
     elif choice == 2:
+        print("Program ended.")
         break
 
     else:
